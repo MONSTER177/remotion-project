@@ -18,3 +18,20 @@ Output: `out/emperors-cafe-promo.mp4` (H.264). On a Linux host with installed Ch
 The MP4 output is ignored by Git; after cloning the repository, render it with the command above. If cloud file downloads are unavailable, copy the out file through your environment's file browser, or clone and render locally. A running cloud Studio's localhost URL requires environment port forwarding to view from another computer.
 
 Local Noto fonts are bundled in public/fonts, together with their copyright and SIL Open Font License. All visual motion is deterministic and seekable. Offer validity is the supplied wording “لمدة أسبوع”; no calendar dates were inferred.
+
+## Windows (PowerShell)
+
+Install Node.js 22 LTS or newer and Git for Windows, then:
+
+```powershell
+git clone --branch feat/emperors-cafe-promo https://github.com/MONSTER177/remotion-project.git emperors-cafe
+cd emperors-cafe
+npm ci
+npm run check
+npm run render:emperors
+Start-Process .\out\emperors-cafe-promo.mp4
+```
+
+For editing, run `npm run dev` and open the printed URL on the same Windows computer. Select EmperorsCafePromo. Do not pass the cloud Linux browser path on Windows.
+
+The pre-rendered MP4 is included at `media/emperors-cafe-promo.mp4` on this local branch, prepared for direct download after the branch is pushed.
