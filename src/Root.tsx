@@ -52,7 +52,7 @@ export const MonsterMotion: React.FC = () => {
     <div style={{position: 'absolute', top: 1140, left: 60, right: 60, textAlign: 'center', opacity: outro, translate: `0 ${(1 - outro) * 120}px`}}>
       <div style={{fontSize: 24, letterSpacing: 7, color: lime, marginBottom: 34}}>THE NEXT CHAPTER</div>
       <div style={{fontSize: 120, fontWeight: 900, lineHeight: 1, letterSpacing: -7}}>STARTS<br/>WITH YOU.</div>
-      <div style={{display: 'inline-block', background: lime, color: ink, borderRadius: 60, fontSize: 27, fontWeight: 700, padding: '24px 42px', marginTop: 50}}>LET’S CREATE ↗</div>
+      <div style={{display: 'inline-block', background: lime, color: ink, borderRadius: 60, fontSize: 27, fontWeight: 700, padding: '24px 42px', marginTop: 50}}>LET’S CREATE <svg width="24" height="24" viewBox="0 0 24 24" style={{marginLeft: 10, verticalAlign: 'middle'}}><path d="M5 19 19 5M5 5h14v14" fill="none" stroke="currentColor" strokeWidth="2.5" /></svg></div>
     </div>
     <div style={{position: 'absolute', bottom: 110, left: 84, right: 84}}>
       <div style={{display: 'flex', justifyContent: 'space-between', fontSize: 20, letterSpacing: 3, color: '#a6b0c5', marginBottom: 25}}><span>CREATIVE ENERGY, UNLIMITED.</span><span>{String(Math.min(10, Math.floor(seconds) + 1)).padStart(2, '0')} / 10</span></div>
