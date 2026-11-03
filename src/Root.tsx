@@ -1,4 +1,9 @@
 import React from 'react';
+import {EmperorsCafePromo} from './emperors/EmperorsCafePromo';
+import {Opening} from './emperors/Opening';
+import {Hookah} from './emperors/Hookah';
+import {Offer} from './emperors/Offer';
+import {Closing} from './emperors/Closing';
 import {AbsoluteFill, Composition, Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 
 const ink = '#080c16';
@@ -61,4 +66,13 @@ export const MonsterMotion: React.FC = () => {
   </AbsoluteFill>;
 };
 
-export const RemotionRoot: React.FC = () => <Composition id="MonsterMotion" component={MonsterMotion} durationInFrames={300} fps={30} width={1080} height={1920} />;
+export const RemotionRoot: React.FC = () => (
+  <>
+    <Composition id="MonsterMotion" component={MonsterMotion} durationInFrames={300} fps={30} width={1080} height={1920} />
+    <Composition id="EmperorsCafePromo" component={EmperorsCafePromo} durationInFrames={450} fps={30} width={1080} height={1920} />
+    <Composition id="EmperorsOpening" component={Opening} durationInFrames={90} fps={30} width={1080} height={1920} />
+    <Composition id="EmperorsHookah" component={Hookah} durationInFrames={120} fps={30} width={1080} height={1920} />
+    <Composition id="EmperorsOffer" component={Offer} durationInFrames={120} fps={30} width={1080} height={1920} />
+    <Composition id="EmperorsClosing" component={Closing} durationInFrames={120} fps={30} width={1080} height={1920} />
+  </>
+);

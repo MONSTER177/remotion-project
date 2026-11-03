@@ -9,10 +9,12 @@
     "build": "remotion bundle src/index.ts",
     "check": "npm run typecheck && npm run build",
     "compositions": "remotion compositions src/index.ts",
-    "render": "remotion render src/index.ts MonsterMotion out/monster-motion.mp4 --concurrency=2"
+    "render": "remotion render src/index.ts MonsterMotion out/monster-motion.mp4 --concurrency=2",
+    "render:emperors": "remotion render src/index.ts EmperorsCafePromo out/emperors-cafe-promo.mp4 --concurrency=2"
   },
   "dependencies": {
     "@remotion/cli": "4.0.540",
+    "@remotion/fonts": "4.0.540",
     "react": "19.2.0",
     "react-dom": "19.2.0",
     "remotion": "4.0.540"
@@ -22,5 +24,7 @@
     "@types/react-dom": "19.2.2",
     "typescript": "5.9.3"
   },
-  "engines": {"node": ">=22"}
+  "engines": {
+    "node": ">=22"
+  }
 }
