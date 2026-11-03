@@ -1,0 +1,26 @@
+{
+  "name": "monster-motion-studio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A cinematic 10-second vertical Remotion motion graphics demo",
+  "scripts": {
+    "dev": "remotion studio src/index.ts --no-open",
+    "typecheck": "tsc --noEmit",
+    "build": "remotion bundle src/index.ts",
+    "check": "npm run typecheck && npm run build",
+    "compositions": "remotion compositions src/index.ts",
+    "render": "remotion render src/index.ts MonsterMotion out/monster-motion.mp4 --concurrency=2"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.540",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.540"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "typescript": "5.9.3"
+  },
+  "engines": {"node": ">=22"}
+}
