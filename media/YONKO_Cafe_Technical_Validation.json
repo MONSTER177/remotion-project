@@ -1,0 +1,42 @@
+[
+  {
+    "file": "media/YONKO_Cafe_Cinematic_150s.mp4",
+    "duration_seconds": 150.0,
+    "frames": 4500,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "video_codec": "h264",
+    "pixel_format": "yuvj420p",
+    "audio_codec": "aac",
+    "audio_channels": 2,
+    "audio_sample_rate": 48000,
+    "size_bytes": 39599425,
+    "sha256": "ae21af80e48e07da40b73283d18da521523fd9682d0677d24c797dc68aa2cdd6",
+    "loudness_lufs": -14.67,
+    "true_peak_dbtp": -3.06,
+    "full_decode": "passed",
+    "sustained_audio_silence": "none",
+    "black_intervals_over_0_4_seconds": "none"
+  },
+  {
+    "file": "media/YONKO_Cafe_Cinematic_15s.mp4",
+    "duration_seconds": 15.0,
+    "frames": 450,
+    "width": 1080,
+    "height": 1920,
+    "fps": "30/1",
+    "video_codec": "h264",
+    "pixel_format": "yuvj420p",
+    "audio_codec": "aac",
+    "audio_channels": 2,
+    "audio_sample_rate": 48000,
+    "size_bytes": 5436737,
+    "sha256": "3d24bcbf9275699980cb4b1ff5f5f2ec94e73e6bc6febb31560cb5d6454ffb97",
+    "loudness_lufs": -14.8,
+    "true_peak_dbtp": -2.8,
+    "full_decode": "passed",
+    "sustained_audio_silence": "none",
+    "black_intervals_over_0_4_seconds": "none"
+  }
+]

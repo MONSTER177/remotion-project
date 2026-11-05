@@ -9,7 +9,13 @@
     "build": "remotion bundle src/index.ts",
     "check": "npm run typecheck && npm run build",
     "compositions": "remotion compositions src/index.ts",
-    "render": "remotion render src/index.ts MonsterMotion out/monster-motion.mp4 --concurrency=2"
+    "render": "remotion render src/index.ts MonsterMotion out/monster-motion.mp4 --concurrency=2",
+    "yonko:review": "node scripts/yonko-render.mjs review",
+    "yonko:short": "node scripts/yonko-render.mjs short",
+    "yonko:main": "node scripts/yonko-render.mjs main",
+    "yonko:verify": "python scripts/yonko-verify.py",
+    "yonko:score": "python scripts/yonko_score.py",
+    "yonko:master": "python scripts/yonko-master.py 150 15"
   },
   "dependencies": {
     "@remotion/cli": "4.0.540",
@@ -22,5 +28,7 @@
     "@types/react-dom": "19.2.2",
     "typescript": "5.9.3"
   },
-  "engines": {"node": ">=22"}
+  "engines": {
+    "node": ">=22"
+  }
 }

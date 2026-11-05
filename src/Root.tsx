@@ -1,4 +1,5 @@
 import React from 'react';
+import {YonkoCompositions} from './yonko/Campaign';
 import {AbsoluteFill, Composition, Easing, interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
 
 const ink = '#080c16';
@@ -61,4 +62,4 @@ export const MonsterMotion: React.FC = () => {
   </AbsoluteFill>;
 };
 
-export const RemotionRoot: React.FC = () => <Composition id="MonsterMotion" component={MonsterMotion} durationInFrames={300} fps={30} width={1080} height={1920} />;
+export const RemotionRoot: React.FC = () => <><Composition id="MonsterMotion" component={MonsterMotion} durationInFrames={300} fps={30} width={1080} height={1920} /><YonkoCompositions/></>;
